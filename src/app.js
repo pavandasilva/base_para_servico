@@ -15,7 +15,7 @@ class App{
 
   routes(){
     this.express.use('/usuarios', require("./routes/Usuarios"));
-    this.express.use('/clientes', require("./routes/Clientes"));
+    this.express.use('/', require("./routes/Index"));
   }
 }
 

@@ -1,0 +1,11 @@
+{
+  "dev": {
+    "host":"localhost",
+    "user": "root",
+    "password": "",
+    "database": "intelligence_prod",
+    "driver": "mysql",
+    "multipleStatements": true
+
+  }, "sql-file": true
+}

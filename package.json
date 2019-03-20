@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "NODE_ENV=prod node ./src/server.js",
     "predev": "NODE_ENV=dev sequelize db:migrate",
     "dev": "pm2 start start.json --env development",
     "preprod": "NODE_ENV=prod sequelize db:migrate",
@@ -16,20 +17,19 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^3.0.4",
+    "db-migrate": "^0.11.5",
+    "db-migrate-mysql": "^1.1.10",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.0",
-    "mariadb": "^2.0.3",
-    "mysql2": "^1.6.5",
+    "load-json-file": "^5.2.0",
+    "mysql": "^2.16.0",
     "sequelize": "^5.1.0"
   },
   "devDependencies": {
     "jest": "^24.5.0",
     "nodemon": "^1.18.10",
-    "sequelize-cli": "^5.4.0",
-    "sqlite3": "^4.0.6",
     "supertest": "^4.0.2",
-    "factory-girl": "^5.0.4",
     "faker": "^4.1.0"
   }
 }
